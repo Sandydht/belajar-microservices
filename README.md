@@ -37,3 +37,36 @@
 - Mudah di scale sesuai kebutuhan
 - Bisa dikerjakan dalam tim - tim kecil
 
+## Masalah di Arsitektur Microservices
+- Distributed system
+- Komunikasi antar service yang rawan error
+- Testing interaksi antar service lebih sulit
+
+## Seberapa Kecil Aplikasi Microservices ?
+- Single responsibility
+- Sekecil mungkin sehingga bisa dimengerti oleh satu orang
+- Bisa dikerjakan sejumlah x developer
+
+## Perbedaan Monolith dengan Microservices
+### Monolith
+- Simplicity
+- Consistency
+- Easy to refactor
+### Microservices
+- Partial deployment
+- Availability
+- Multiple platform
+- Easy to scale
+
+## Database per Service
+- Decentralized database
+
+## Kenapa Harus Database per Service ?
+- Memastikan bahwa antar service tidak ketergantungan
+- Tiap service bisa menggunakan aplikasi database sesuai dengan kebutuhan
+- Service tidak perlu tahu kompleksitas internal database service lain
+
+## Kapan Harus Shared Database ?
+- Ketika melakukan transisi dari aplikasi Monolith ke Microservices
+- Ketika bingung memecah data antar service
+- Ketika dikejar waktu, sehingga tidak ada waktu untuk bikin API
